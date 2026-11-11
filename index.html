@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Academic Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span class="logo-icon">S</span>
+                <span>StudentHub</span>
+            </div>
+
+            <div class="sidebar-label">MENU</div>
+
+            <nav class="navigation">
+
+                <a href="index.html" class="nav-link active">
+                    <span>▦</span> Dashboard
+                </a>
+
+                <a href="pages/courses.html" class="nav-link">
+                    <span>▤</span> My Courses
+                </a>
+
+                <a href="pages/assignments.html" class="nav-link">
+                    <span>☑</span> Assignments
+                </a>
+
+                <a href="pages/profile.html" class="nav-link">
+                    <span>◉</span> My Profile
+                </a>
+
+            </nav>
+
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Topbar -->
+            <header class="topbar">
+
+                <div>
+                    
+                    <h2>Dashboard</h2>
+                </div>
+
+                <div class="topbar-right">
+
+                    <div class="user-info">
+                        <div class="avatar">T</div>
+                        <div>
+                            <strong>Student Account</strong>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+
+                <div>
+                    <p class="welcome-label">STUDENT PORTAL</p>
+
+                    <h1>Welcome back, Student! 👋</h1>
+
+                    <p>
+                        Here's an overview of your academic progress
+                        and learning activities.
+                    </p>
+                </div>
+
+                <div class="welcome-icon">🎓</div>
+
+            </section>
+
+
+            <!-- Statistics -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-icon blue">📚</div>
+                    <p>Enrolled Courses</p>
+                    <h2 id="totalCourses">4</h2>
+                    <small>Active learning courses</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <p>Completed Assignments</p>
+                    <h2 id="completedAssignments">8</h2>
+                    <small>Successfully completed</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">⏳</div>
+                    <p>Pending Assignments</p>
+                    <h2 id="pendingAssignments">3</h2>
+                    <small>Require your attention</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">📈</div>
+                    <p>Overall Progress</p>
+                    <h2 id="overallProgress">76%</h2>
+                    <small>Academic performance</small>
+                </div>
+
+            </section>
+
+
+            <!-- Courses Section -->
+            <section class="content-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>My Courses</h2>
+                        <p>Continue your learning journey</p>
+                    </div>
+
+                    <a href="pages/courses.html" class="view-link">
+                        View all →
+                    </a>
+                </div>
+
+                <div class="course-grid" id="courseContainer">
+
+                    <!-- Courses will be loaded using JavaScript -->
+
+                </div>
+
+            </section>
+
+
+            <!-- Bottom Section -->
+            <section class="bottom-grid">
+
+                <!-- Assignments -->
+                <div class="panel">
+
+                    <div class="section-heading">
+                        <div>
+                            <h2>Upcoming Assignments</h2>
+                            <p>Keep track of your deadlines</p>
+                        </div>
+
+                        <a href="pages/assignments.html" class="view-link">
+                            View all
+                        </a>
+                    </div>
+
+                    <div id="assignmentContainer">
+
+                        <!-- Assignments loaded using JavaScript -->
+
+                    </div>
+
+                </div>
+
+
+                <!-- Announcements -->
+                <div class="panel announcements">
+
+                    <div class="section-heading">
+                        <div>
+                            <h2>Announcements</h2>
+                            <p>Latest academic updates</p>
+                        </div>
+                    </div>
+
+                    <div class="announcement-item">
+                        <span class="announcement-dot blue-dot"></span>
+
+                        <div>
+                            <strong>Course Update</strong>
+                            <p>New learning materials have been added.</p>
+                        </div>
+                    </div>
+
+                    <div class="announcement-item">
+                        <span class="announcement-dot green-dot"></span>
+
+                        <div>
+                            <strong>Academic Reminder</strong>
+                            <p>Check your upcoming assignment deadlines.</p>
+                        </div>
+                    </div>
+
+                    <div class="announcement-item">
+                        <span class="announcement-dot orange-dot"></span>
+
+                        <div>
+                            <strong>Project Work</strong>
+                            <p>Continue working on your semester projects.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>
+                    © 2026 Tanisha | Cloud-Based Student Academic Dashboard Project
+                </p>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
